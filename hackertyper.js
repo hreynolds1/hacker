@@ -35,7 +35,7 @@ document.getElementById("inputfile").addEventListener("change", function() {
     document.getElementById("inputfile").hidden=true
 })
 
-document.onkeypress=function(){
+document.onkeyup=function(){
     console.log(resulttext[currentline].substring(currentchar,currentchar+speed).split(""))
     hackertext.innerHTML+=resulttext[currentline].substring(currentchar,currentchar+speed)
     currentchar+=speed
